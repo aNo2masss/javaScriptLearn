@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <button id="btn1">变大</button>
+            <button>变小</button>
+        </div>
+        <p id="font">文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+    </div>
+    <script>
+    // var str='<p class="demo">hello world</p>';
+    // var reg=/<(\w+)[^<>]*>(.*)<\/\1>/
+    // var str="div#demo.demo";
+    // var reg=/([\w]+)#(\w+)\.(\w+)/;
+    var app=document.getElementById('app');
+   var btns=document.getElementsByTagName('button')
+   var font=document.getElementById('font');
+   fontSize=20;
+   font.style.fontSize=fontSize+'px';
+// btns.onclick=function  () {
+//      font.style.color="red";
+//      fontSize+=1;
+//      font.style.fontSize=fontSize+'px';
+//    }
+for(i=0; i <btns.length; i++) {
+    btns[i].index=i;
+    btns[i].onClick=function() {
+        fontSize+=this.index=== 0 ? 1 : -1;
+        font.style.fontSize=fontSize+'px';
+    }
+}
+
+
+    
+      
+
+    </script>
+</body>
+</html>

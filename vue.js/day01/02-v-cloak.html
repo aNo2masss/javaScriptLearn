@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../lib/vue.js"></script>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 使用v-cloak 能够插值表达式闪烁的问题 -->
+        <p v-cloak>121212{{ msg }}121212</p>
+        <h2 v-text="msg">1313131313</h2>
+        <div>{{ msg2 }}</div>
+        <div t-text="msg2"></div>
+        <div v-html="msg2"></div>
+        <input type="button" value="按钮" v-bind:title="mytitle + '123'" @click="show">
+                                    <!-- 会把mytitle转换为变量 可以添加字符串 -->
+    </div>
+    
+    <script>
+        var vue = new Vue({
+            el: '#app',
+            data: {
+                msg: '123',
+                msg2: '<h1>哈哈哈哈我是H1我大</h1>',
+                mytitle: '这是一个自己定义的title',
+                consolo:'hello'
+            },
+            methods: {//methods属性中定义了当前vue实例所有可用方法
+                show:function() {
+                    console.log('hello')
+                }
+
+            }
+
+        })
+    </script>
+</body>
+
+</html>

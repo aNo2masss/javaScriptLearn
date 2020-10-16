@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.5.1.min.js" onload></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .list {
+            width: 560px;
+            height: 300px;
+            overflow: hidden;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .content {
+            width: 3000px;
+            height: 300px;
+            font-size: 0;
+            position: absolute;
+            /* left: -600px; */
+        }
+
+        div img {
+            width: 560px;
+            height: 300px;
+
+        }
+
+        .btns {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 30px;
+            text-align: center;
+        }
+
+        .btns span {
+            padding: 6px;
+            margin: 6px;
+            font-size: 0;
+            border-radius: 50%;
+            background: white;
+        }
+
+        .btns span.choose {
+            background-color: red;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            height: 50px;
+            color: white;
+            margin-top: -25px;
+            background-color: gray;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <div class="content" id="content">
+            <!-- <img src="./images/banner4.jpg" alt=""> -->
+            <img src="./images/banner1.jpg" alt="">
+            <img src="./images/banner2.jpg" alt="">
+            <img src="./images/banner3.jpg" alt="">
+            <img src="./images/banner4.jpg" alt="">
+            <!-- <img src="./images/banner1.jpg" alt=""> -->
+        </div>
+        <div class="btns">
+            <span class="choose"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="prev">&lt;</div>
+        <div class="next">&gt;</div>
+    </div>
+    <script>
+        var content = $('.content');
+        var btns = $('.btns span');
+        var next = $('.next');
+        var index = 0;
+        //点击 下一张
+        $('.prev').click(function () {
+            clearInterval(timebar);
+            index--;
+            if (index === -1) {
+                index = 3;
+            }
+            nextClick();
+        })
+        next.click(function () {
+            clearInterval(timebar);
+            index++;
+            if (index === 4) {
+                index = 0;
+            }
+            nextClick();
+        })
+        //顺时针播放图片
+        function nextClick() { 
+            content.animate({ left: -560 * index }, 500, function () {
+                btns
+                    .eq(index).addClass("choose")
+                    .siblings().removeClass("choose");
+                // console.log( btns.eq(index));
+            })
+        }
+        //自动轮播+控制停止
+        var timebar =setInterval(function () {
+                index++;
+            if (index === 4) {
+                index = 0;
+            }nextClick();
+            }, 2000)
+        content.hover(function () {
+            clearInterval(timebar)
+        }, function () {
+            timebar = setInterval(function () {
+                index++;
+            if (index === 4) {
+                index = 0;
+            }
+            nextClick();
+            }, 2000)
+        })//触发备选元素的指定事件
+    btns.click(function () {
+        //获取索引值
+        clearInterval(timebar);
+        index =$(this).index();
+       nextClick();
+    })
+    </script>
+</body>
+
+</html>

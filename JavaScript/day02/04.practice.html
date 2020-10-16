@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nian=0;
+        var workDate=prompt('请输入工作年限');
+        var money=prompt('请输入每月工资');
+        if(workDate<1) {
+            nian=money*(money<8000? 1.0:1.2);
+            console.log(nian);
+        }
+        else if(workDate<2)
+        {
+            nian=money*(money<10000? 1.5:1.7);
+        }
+        alert('年终奖是'+(nian|| 0));
+    </script>
+    
+</body>
+</html>

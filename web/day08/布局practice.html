@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .main {
+            width: 970px;
+            margin: 0 auto;
+        }
+
+        .header {
+            margin-bottom: 10px;
+        }
+
+        .header .header-left {
+            float: left;
+            width: 277px;
+            height: 103px;
+            background-color: red;
+        }
+
+        .header .header-right {
+            float: left;
+            margin-left: 14px;
+            width: 679px;
+        }
+
+        .header .header-right .title {
+            float: right;
+            width: 137px;
+            height: 49px;
+            margin-bottom: 8px;
+
+            background-color: greenyellow;
+        }
+
+        .header .header-right .intro {
+            height: 46px;
+            background-color: greenyellow;
+            clear: both;
+        }
+
+        .body {
+            height: 435px;
+
+        }
+
+        .body .body-left {
+            width: 310px;
+            height: 435px;
+            float: left;
+            background-color: gold;
+        }
+
+        .body .body-right {
+            float: left;
+            width: 650px;
+            margin-left: 10px;
+        }
+
+        .body .body-right .modules {
+            width: 450px;
+            float: left;
+        }
+
+        .body .body-right .module1 {
+            height: 240px;
+            margin-bottom: 10px;
+            background-color: skyblue;
+        }
+
+        .body .body-right .module2 {
+            height: 110px;
+            margin-bottom: 10px;
+            background-color: skyblue;
+        }
+
+        .body .body-right .module3 {
+            height: 30px;
+            background-color: skyblue;
+            margin-bottom: 10px;
+        }
+
+        .body .body-right .silder {
+            width: 190px;
+            height: 401px;
+            margin-left: 10px;
+            background-color: purple;
+            float: left;
+        }
+
+        .body .body-right .status {
+            height: 25px;
+            background-color: green;
+            margin-bottom: 10px;
+        }
+        .main  .footer {
+            height: 35px;
+            background-color: blue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header clearfix">
+            <div class="header-left"></div>
+            <div class="header-right">
+                <div class="title"> </div>
+                <div class="intro"></div>
+            </div>
+        </div>
+        <div class="body clearfix">
+            <div class="body-left"></div>
+            <div class="body-right">
+                <div class="content  clearfix">
+                    <div class="modules">
+                        <div class="module1"></div>
+                        <div class="module2"></div>
+                        <div class="module3"></div>
+                    </div>
+                    <div class="silder"></div>
+                </div>
+                <div class="status"></div>
+            </div>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>

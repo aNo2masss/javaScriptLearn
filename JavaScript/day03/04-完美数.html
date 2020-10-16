@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var num=prompt('shuru')
+        function checkNum(num) {
+            var sum=0;
+            for (var i=1;i<num;i++) {
+                if(num % i ===0) {
+                    sum +=i;
+                }
+           } 
+           // 判断完美数
+            if (sum === num) {
+                return true
+            }
+                return false
+        }
+
+        for(var i=1;i<=1000;i++) {
+            if (checkNum(i))  {
+                console.log(i)
+            }
+        }
+    </script>
+</body>
+</html>

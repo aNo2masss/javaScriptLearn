@@ -1,0 +1,54 @@
+    .circle{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        margin: 200px auto;
+        transform: rotate(135deg);
+        filter: drop-shadow(0px 0px 30px red);
+        /* 使用动画 */
+        animation: jump 0.5s linear infinite;
+    }
+    /* 动画 写在标签外*/
+    @keyframes jump{
+        /* 关键帧动画 */
+        /* 0%{动画开始时的样式}
+        50%{动画运行到一半}
+        100%{动画结束} */
+        0%{
+            /* 缩放 */
+            transform: scale(1) rotate(135deg); 
+        }
+    
+        60%{
+            transform:scale(.8) rotate(135deg);
+        
+        }
+        90%{
+            transform: scale(1.2)   rotate(135deg);
+        }
+        100%{
+            transform: scale(1) rotate(135deg);
+        }
+          
+    }
+    .circle:before{
+        content: "";
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        left: -100px;
+        position: relative;
+        border-radius: 50% 50%;
+    }
+    .circle:after{
+        content: "";
+        display: block;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        top:-100px;
+        position: relative;
+        border-radius:50% 50% ;
+        
+    }

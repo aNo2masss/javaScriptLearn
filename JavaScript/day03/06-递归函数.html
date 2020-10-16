@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function bfnq(num) {
+            // 当前项等于前两项之和
+            if (num ===1|| num ===2 ) {
+                return 1;
+            }
+            return bfnq(num - 1) + bfnq(num - 2);
+        }
+        console.log (bfnq(1))
+        console.log (bfnq(2))
+        console.log (bfnq(3))
+        console.log (bfnq(4))
+        console.log (bfnq(5))
+        console.log (bfnq(6))
+        console.log (bfnq(7))
+
+    </script>
+</body>
+
+</html>

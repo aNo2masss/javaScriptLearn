@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方块拼图</title>
+    <style>
+        div{
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            border: 3px solid white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <script>
+    for(var r=0;r<10;r++){
+        for(var k=0;k<10;k++){
+            var div =document.createElement("div");
+            document.body.appendChild(div);
+            div.style.top=r*80+"px";
+            div.style.left=k*80+"px";
+        }
+
+    }
+    </script>
+    </div>
+    
+</body>
+</html>

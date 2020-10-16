@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app1">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+    <div id="app2">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+<script>
+// 获取第一组
+var p1=document.getElementById('app1').getElementsByTagName('p');
+var p2=document.getElementById('app2').getElementsByTagName('p');
+// 对应思想
+// for (var i=0;i<p1.length;i++) {
+//     p1[i].index=i
+//     p1[i].onclick=function () {
+//         p2[this.index].style.backgroundColor="red";
+        
+//     }
+// }
+// 排它思想：不管之前选中是第几个，都清除，再选中
+for (var i=0;i<p1.length;i++) {
+    p1[i].index=i;
+    p1[i].onclick=function () {
+        //其他样式都先清除
+        for(var j=0;j<p2.length;j++) {
+            //清除每一个p2中的p的样式
+            p2[j].style.backgroundColor="white";
+        }
+        //设置选中的
+        p2[this.index].style.backgroundColor="red";
+    }
+}
+
+
+</script>
+</body>
+</html>

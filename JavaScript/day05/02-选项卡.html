@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.5.1.min.js" onload></script>
+    <style>
+        .app {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        .app .head {
+            text-align: center;
+        }
+        .app .head span {
+            padding: 10px;
+            line-height: 50px;
+    
+        }
+        .app .head .choose {
+            color: red;  
+        }
+        .app .body  p{
+            display: none;
+        }
+        .app .body .choose {
+            display: block;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="app">
+        <div class="head">
+            <span class="choose">精选</span>
+            <span>社会</span>
+            <span>娱乐</span>
+            <span>生活</span>
+        </div>
+        <div class="body">
+            <p class="choose">精选新闻<img src="https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2534506313,1688529724&fm=26&gp=0.jpg" alt=""></p>
+            <p  class="choose">社会新闻<img src="https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1830914723,3154965800&fm=26&gp=0.jpg" alt=""></p>
+            <p>娱乐新闻</p>
+            <p>生活新闻</p>
+        </div>
+    </div>
+    <script>
+    // var app=document.getElementById('app');
+    // var spans=document.getElementsByTagName('span');
+    // var ps=document.getElementsByTagName('p');
+    // var span1=$('span');
+    // console.log(span1)
+    // for(i=0;i<span1.length;i++) {
+    //     span1[i].index=i;
+    //     span1[i].onclick= function() {
+    //         for (var j=0;j<span1.length;j++) {
+    //             ps[j].className="";
+    //             span1[j].className="";
+    //         }
+    //         ps[this.index].className='choose';
+    //         span1[this.index].className="choose";
+    //     }
+    // }
+
+
+    // var spans=$('span');
+    // var ps=$('p');
+    // for(i=0;i<spans.length;i++) {
+    //     spans[i].index=i;
+    //     spans.eq(i).click(function () {
+    //         for (var j=0;j<spans.length;j++) {
+    //             ps.eq(j).hide(1000);
+    //         }
+    //         ps.eq(this.index).show(1000)
+    //     })
+    // }
+    // 模仿百度换肤
+    var div=$('div');
+    var body=$('body');
+    var img =$('img');
+    var index=0;
+    img.click( function () {
+        var url=this.getAttribute('src');
+        body.css('backgroundImage','url('+url+')')
+    })
+
+    </script>
+</body>
+
+</html>
