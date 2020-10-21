@@ -100,32 +100,29 @@
     <script>
         var content = document.getElementById('content')
         var span = document.getElementsByTagName('span');
-      
         var next=document.getElementById('next');
         var index = 0;
         console.log(content);
         next.onclick= function () {
             nextClick();
         }
-    
      function nextClick() { 
             var newLeft=parseInt(content.style.left)-560;
             content.style.left=newLeft+"px";
-            // if(newLeft<=-2240) {
-            //     newLeft=0;
-            // }
+            if(newLeft<=-2240) {
+                newLeft=0;
+            }
         }
-            // var timebar = setInterval(function () {
-            
-            // }, 3000,function () {
-            //     for (i=0;i=span.length;i++) {
-            //         span[i].className="";
-            //     }
-            //     span[index].className="choose";
-            // })
+            var timebar = setInterval(function () {
+                nextClick();
+            }, 3000,function () {
+                for (i=0;i=span.length;i++) {
+                    span[i].className="";
+                }
+                span[index].className="choose";
+            })
 
         
     </script>
 </body>
-
 </html>
