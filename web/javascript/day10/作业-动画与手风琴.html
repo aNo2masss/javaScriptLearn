@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.5.1.min.js" onload></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .box1 {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="btn2">回上海</button>
+    <div class="box1"></div>
+    <script>
+        var btn = document.getElementsByTagName('button')[0];
+        var box1 = document.getElementsByTagName('div')[0];
+        btn.onclick = function () {
+            var left = 0;
+            var num = parseInt(2000 / 33);
+            var distance = 1200 / num;
+            var timebar = setInterval(function () {
+
+                left += distance;
+                if (left >= 1200) {
+                    clearInterval();
+                    left = 1200;
+                }
+                box1.style.left = left + 'px';
+
+            })
+        }
+
+
+    </script>
+</body>
+
+</html>

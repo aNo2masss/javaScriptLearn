@@ -1,0 +1,148 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: solid #f00 1px !important;
+    background: #000 !important;
+    color: #fff !important; */
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    color:#333;
+    text-decoration: none;
+}
+.left {
+    float: left;
+}
+.right {
+    float:right;
+}
+#hearder,#section,#article,#footer {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+header {
+    height: 70px;
+    width: 1920px;
+    background-color:darkblue;
+    overflow: hidden;
+    min-width: 70%;
+}
+
+header ul  {
+    margin-left: 25%;
+}
+header ul li {
+    height: 70px;
+    line-height:70px;
+    padding: 0 1% 0;
+    float: left;
+    color: white;
+}
+header .login  span {
+    color: white;
+    background-color: orange;
+    float: left;
+    padding:4px 6px 3px 6px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+section {
+    min-width: 70%;
+}
+section .banner {
+    width: 996px;
+    height: 243px;  
+    background: url("./imges/twoPage_03.png") no-repeat center;
+    background-color: orange;
+    margin: 0 auto;
+}
+section .line {
+    height: 1px;
+    width: 1000px;
+    border: 0.3px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+
+section .line1 {
+    top: 200px;
+    height: 0 !important;
+}
+section .line2 {
+    top: 144px;
+    
+}
+section .line3 {
+    top: 80px;
+    height: 0 !important;
+}
+section article {
+    width: 1000px;
+    height: 300px;
+    padding: 1px;
+    margin: 0 auto;
+}
+section article ul {
+    float: left;
+}
+section article ol {
+    float: right;
+    
+}
+section article li {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+section article .slider {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    font-style: normal;
+   
+}
+section article span {
+    color: white;
+    background-color: darkblue;
+    padding:4px 6px 3px 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+footer {
+    height: 200px;
+    width: 1000px;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 20px;
+    border-top: 2px solid skyblue;
+    min-width: 70%;
+    
+}
+footer ul li {
+    overflow: hidden;
+}
+footer .logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background: url("./imges/blue.png") no-repeat center;
+    position: relative;
+    left: 200px;
+}
+footer ul li .police {
+    background: url("./imges/beiantubiao.png") no-repeat left;
+    padding-left: 20px;
+    font-weight: none;
+    color: grey;
+}
+footer ul li .gif {
+    background: url("./imges/pic1.gif") no-repeat right ;
+    padding-right: 20px;
+}

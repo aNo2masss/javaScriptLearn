@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: solid #f00 1px !important;
+    background: #000 !important;
+    color: #fff !important; */
+}
+
+.title {
+    height: 50px;
+    width:100%;
+    background-color:white;
+    display: flex;
+    
+}
+
+.title .logo { 
+    width: 152px;
+    height: 30px;
+    align-self: center;
+    margin-left: 164px;
+    margin-right: 500px;
+    color: red;
+    text-indent: -999999em;
+    background-image: url("./imges/iconlist_1.png");
+    background-repeat: no-repeat;
+    background-position: -870px -99px ;
+    float: left;
+    
+}
+.title li {
+    list-style: none;
+    height: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: black;
+    padding-right: 30px;
+    float: left;
+}
+.title button{
+    color: white;
+    background-color: red;
+    text-align: center;
+    align-self: center;
+    font-style: none;
+    
+}
+.title .button1 {
+    width: 85px;
+    height: 25px;
+    align-self: center;
+    background-image: url("./imges/iconlist_2.png");
+    background-repeat: no-repeat;
+    background-position: -1655px -510px;
+    margin-right: 20px;
+}
+.title .button2 {
+    width: 85px;
+    height: 25px;
+    align-self: center;
+    background-image: url("./imges/iconlist_2.png");
+    background-repeat: no-repeat;
+    background-position: -1655px -537px;
+}
+.box1 {
+    width:100%;
+    height: 700px;
+    background:url("./imges/bg_1.jpg") no-repeat;
+    overflow: hidden;
+}
+.box1 .top {
+    width: 460px;
+    height: 100px;
+    background: url("./imges/iconlist_1.png") no-repeat;
+    background-position:-870px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px; 
+    margin-bottom: 100px;   
+}
+.box1 .btm-box {
+    width: 1000px;
+    position: absolute;
+    left: 581px;
+    
+}
+.btm-box div {
+    width: 180px;
+    height: 180px;
+    background: url("./imges/iconlist_1.png") no-repeat; 
+    float: left;
+    position: relative;
+}
+.box1 .buttom1 {
+    background: url("./imges/iconlist_1.png") no-repeat; 
+}
+.box1 .buttom2 {
+    background-position:-175px ;
+    left: -30px;
+} 
+.box1 .buttom3 {
+    background-position:-345px ;
+    left: -55px;
+} 
+.box1 .buttom4 {
+    background-position:-520px ;
+    left: -75px;
+} 
+.box1 .buttom5 {
+    background-position:-690px ;
+    left: -100px;
+} 
+.banner2 {
+    height: 700px;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+}
+.banner2 h1 {
+     text-align: center;
+     font-weight: 400;
+     margin: 100px 0 20px;
+    font-family: serif;
+ }
+ .banner2 p {
+     margin: 0 auto;
+    width: 901px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    color: #999;
+    text-align:center;
+ }
+ .banner2 .bg-img1 {
+     width: 640px;
+     height: 150px;
+     background: url("./imges/iconlist_2.png") no-repeat;
+     background-position:-1650px 0;
+     margin: 0 auto;
+ }
+ .banner2 .bg-img2 {
+     width: 470px;
+     height: 150px;
+     background: url("./imges/iconlist_2.png") no-repeat;
+     background-position:-1750px -150px;
+     margin: 0 auto;
+ }
+ .banner3 {
+     width:100%;
+     height: 665px;
+     background: url("./imges/bg_2.jpg") no-repeat;
+     background-size: 100% 100%;
+    padding: 1px;
+ }
+ .banner3 .phone-img {
+     height: 520px;
+     width: 820px;
+     background: url("./imges/iconlist_2.png") no-repeat;
+     margin: 80px 0 80px 350px;
+    
+ }
+ .banner4 {
+     width: 100%;
+     height: 700px;
+     background: url("./imges/bg_3.jpg") no-repeat white;
+     background-position: center;
+     
+ }
+ .banner5 {
+     width: 100%;
+     height: 700px;
+     background:url("./imges/bg4.png") no-repeat;
+     background-size: 100% 100%;
+     padding: 1px;  
+ }
+.banner5 .dingwei {
+    width: 750px;
+    height: 526px;
+    background: url("./imges/iconlist_2.png") no-repeat;
+    background-position: -900px 0;
+    margin: 80px 0 80px 580px;
+}
+.btm-banner {
+    width: 100%;
+    height: 600px;
+    background: white;
+    padding: 1px;
+}
+.btm-banner ul {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.btm-banner ol {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.btm-banner h1 {
+    background: url("./imges/iconlist_3.png");
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+.btm-banner  li {
+    width: 305px;
+    height: 100px;
+    float: left;
+   
+    margin-right: 40px;
+}
+.btm-banner li h2 {
+    width: 180px;
+}
+.btm-banner li p {
+    width: 300px;
+}
+.btm-banner ul .fuction1 {
+    background-position:0 0 ;
+}
+.btm-banner .function2 {
+    background-position:-85px 0 ;
+}
+.btm-banner .function3 {
+    background-position:-170px 0 ;
+}
+.btm-banner .function4 {
+    background-position:0 -86px;
+}
+.btm-banner .function5 {
+    background-position:-85px -86px ;
+}
+.btm-banner .function6 {
+    background-position:-170px -86px ;
+}
+footer {
+    height: 250px;
+    width: 100%;
+    background-color:#363636;
+    position: relative;
+    padding: 1px;
+}
+
+footer .list1,
+.list2 {  
+    float: left;
+    margin-top: 84px;
+    margin-right: 80px;
+}
+footer .list1 {
+    margin-left: 300px;
+    margin-top: 84px;
+    margin-right: 80px;
+
+}
+footer ul {
+    list-style: none;
+}
+footer ol {
+    list-style: none;
+}
+footer .weibo {
+    width: 215px;
+    height: 110px;
+    background: url("./imges/iconlist_2.png") no-repeat;
+    background-position: 0 -590px;
+    float: left;
+    margin-top: 84px;
+    margin-right: 80px;
+}
+footer .weixin {
+    width: 215px;
+    height: 110px;
+    background: url("./imges/iconlist_2.png") no-repeat;
+    background-position: -215px -590px;
+    float: left;
+    margin-top: 84px;
+    margin-right: 80px;
+}
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 50px;
+    left:- 50%;
+    background-color:#363636;
+}

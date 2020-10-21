@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<script>
+var div=document.getElementsByTagName('div');
+for (i=0;i<div.length;i++) {
+    div[i].id=i+1;
+    div[i].onclick= function() {
+        console.log(this.id)
+    }
+}
+console.log(div)
+</script>
+</body>
+</html>

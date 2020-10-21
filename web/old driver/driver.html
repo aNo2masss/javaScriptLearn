@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg {
+            width: 2381px;
+            height: 825px;
+            background: url("./images/bg.png");
+            background-size: 100% 100%;
+            background-position: -2381px 0;
+            position: absolute;
+            animation: ro 3s linear infinite;
+        }
+
+        @keyframes ro {
+            0%{
+                background-position: 2381px 0;
+            }
+
+            100% {
+                background-position: 0, 0;
+            }
+
+        }
+
+        .car {
+            width: 786px;
+            height: 511px;
+            position: relative;
+            top: 350px;
+        }
+
+        /* .cloud {
+            width: 454px;
+            height: 430px;
+            background-size: 100% 100%;
+            position: relative;
+            left:1200px;
+            background-position:-1200px 0;
+            background: url("./images/yun.png") repeat;
+            animation: cloud 10s linear infinite;
+
+        }
+
+        @keyframes cloud {
+          0% {  
+            background-position:-1200px 0;
+            }
+          
+            100% {
+                background-position:0 0;
+            }
+            
+
+
+        } */
+
+        .luntai1,
+        .luntai2 {
+            width: 152px;
+            height: 152px;
+            position: relative;
+            float: left;
+            animation: lt .5s linear infinite;
+        }
+
+        .luntai1 {
+            top: 111px;
+            left: 96px;
+        }
+
+        .luntai2 {
+            top: 111px;
+            left: 369px;
+        }
+
+        @keyframes lt {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .sun {
+            width: 256px;
+            height: 256px;
+            position: relative;
+            /* top: -600px;
+            left:800px */
+            top: -600px;
+            animation: sun 3s linear infinite;
+        }
+        @keyframes sun {
+            0% {
+                top:-700px;
+                left: 400px;
+            }
+            
+            50% {
+               top:700px;
+               left:800px ;
+            }
+            100% {
+                top:-700px;
+               left:400px ;
+            }
+        }
+        .luna {
+            width: 256px;
+            height: 256px;
+            position: relative;
+            /* top: -600px;
+            left:800px */
+            top: 600px;
+            animation: luna 3s linear infinite;
+
+        }
+        @keyframes luna {
+            0% {
+                top:700px;
+                left:0px;
+            }
+            50% {
+                top:-700px;
+                left:400px;
+            }
+            100% {
+                top:700px;
+                left:800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg">
+        <!-- <div class="cloud"></div> -->
+    </div>
+
+    <div class="car"><img src="./images/car.png" alt=""></div>
+    <div class="luntai1"> <img src="./images/luntai.png" alt=""></div>
+    <div class="luntai2"><img src="./images/luntai.png" alt=""></div>
+    <div class="sun"><img src="./images/taiyang.png" alt=""></div>
+    <div class="luna"><img src="./images/yueliang2.png" alt=""></div>
+</body>
+
+</html>

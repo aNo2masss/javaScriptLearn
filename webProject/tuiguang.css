@@ -1,0 +1,197 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: solid #f00 1px !important;
+    background: #000 !important;
+    color: #fff !important; */
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    color:#333;
+    text-decoration: none;
+}
+
+body {
+    background: #e4e4e4;
+    color: #666;
+}
+header .nav {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: rgb(253, 237, 237);
+    overflow: hidden;
+    min-width: 1000px;
+    background: url(./image1/bg_header.png)  0 0 repeat-x;
+}
+header .nav .navinner {
+    width: 980px;
+    margin: 0 auto;
+}
+header .nav .logo {
+    float: left;
+    width: 225px;
+    padding: 5px 0 0 0;
+}
+header .logo img {
+    width: 225px;
+    height: 39px;
+    background: url(./image1/weibo_platform_logo.png) 0 0 no-repeat;
+}
+header .logo img:hover {
+    background-position: 0  -50px;
+}
+
+header .item {
+    float: left;
+}
+header .item ul li {
+    float: left;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    line-height: 48px;
+    padding: 0 18px;
+    color: #333;
+}
+header .nav .login {
+    float: right;
+    height: 48px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #333;
+    padding: 0 20px;
+}
+section {
+    width: 100%;
+    margin-top: 48px;
+    background: url(./image1/bg_center_banner.jpg) top center repeat-x;
+    padding-top: 30px;
+}
+section .devel-header {
+    width: 950px;
+    margin: 0 auto;
+    padding: 0 0 25px;
+    overflow: hidden;
+    zoom: 1;
+}
+section .devel-header .devel-logo {
+    width: 278px;
+    height: 64px;
+    float: left;
+    background: url(./image1/fans_marketing_logo_lumpsugar.png) no-repeat;
+}
+section .devel-header .devel-app {
+    float: right;
+    width: 150px;
+    height: 42px;
+    margin: 15px 30px 0 0;
+    background: url(./image1/bg_btn.png) 0 -270px no-repeat;
+    overflow: hidden;
+}
+
+section .devel-body .devel-inner {
+    min-height: 195px;
+    width: 950px;
+    background: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+section .devel-body .devel-right {
+    float: left;
+    width: 600px;
+    padding: 30px 0 0 30px;
+    overflow: hidden;
+    padding-bottom: 15px;
+
+}
+section .devel-body .devel-left {
+    float: right;
+    width: 250px;
+    padding: 30px 30px 0 0;
+} 
+section .devel-body .devel-right .area-sort {
+    margin-bottom: 40px;
+}
+section .devel-body .devel-right .area-title {
+    background: #f7f7f7;
+    border: 1px solid #f0f0f0;
+    border-radius: 3px;
+    height: 33px;
+    line-height: 33px;
+    text-indent: 8px;
+}
+section .devel-body .devel-right .area-body {
+    line-height: 25px;
+    padding: 15px 10px 0;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+section .devel-body .devel-right .video-area {
+    padding: 20px 0;
+    width: 400px;
+    height: 263px;
+    margin: 0 auto;
+    background:url(./image1/Image\ 1.png) no-repeat center;
+}
+section .devel-body .devel-left .area-title {
+    height: 28px;
+    padding: 5px 0 0;
+    border-bottom: 1px solid #ececec;
+}
+section .devel-body .devel-left ul li {
+    float: left;
+    width: 92px;
+    height: 112px;
+    display: block;
+    position: relative;
+    margin: 20px 0 0 23px;
+}
+section .devel-body .devel-left ul li img {
+    margin: 6px;
+    border: 0;
+    width: 80px;
+    height: 80px;
+}
+section .devel-body .devel-left p {
+    text-align: center;
+    line-height: 14px;
+    color: #369;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+footer .inner{
+    width: 980px;
+    margin: 20px auto 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+footer .inner .up p {
+    margin: 20px 0 5px;
+    text-align: center;
+}
+footer .inner .up p a {
+    color:#3c7cb3;
+    margin: 0 15px;
+    font-size: 12px;
+    line-height: 13px;
+}
+footer .inner .up p span {
+    color: #ccc;
+}
+
+footer .inner .down span{
+    color:#999;
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+footer .inner .down p {
+    text-align: center;
+}

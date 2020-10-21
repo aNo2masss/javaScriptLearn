@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: solid #f00 1px !important;
+    background: #000 !important;
+    color: #fff !important; */
+}
+ul,ol {
+    list-style: none;
+}
+em {
+    font-style: normal;
+}
+a {
+    color:#333;
+    text-decoration: none;
+}
+body {
+    
+    color: #333;
+    background: url(./image1/total_body_bg.jpg) center 0 repeat-x;
+}
+html {
+    background: #e1f4fc url(./image1/total_body_bg.jpg) center 0 repeat-x;
+}
+.clearfix::after { 
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 48px;
+    border-top: 2px solid #fa7d3c;
+    box-shadow: 0 0 1px 0px rgba(0,0,0,0.15);
+    background: #fff;
+    min-width: 1370px;
+}
+header .nav {
+    position: relative;
+    width:80%;
+    height: 48px;
+    margin: 0 auto;
+}
+header .nav-logo {
+    float: left;
+    position: relative;
+    width: 140px;
+    height: 48px;
+    color: #333;
+    left: auto;
+    top: auto;
+    margin: 0;
+    background: none;
+}
+header .nav-logo span {
+    display: block;
+    margin-left: 50px;
+    width: 140px;
+    height: 48px;
+    cursor: pointer;
+    background: url(./image1/WB_logo.png) no-repeat 0 40%;
+}
+
+header .nav-search {
+    position: relative;
+    float: left;
+    width: 468px;
+    height: 28px;
+    margin: 9px 0 0 10px;
+    background-color: #f2f2f5;
+    border: 1px solid #ccc;
+    color: #808080;
+}
+header .nav-search input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px 33px 4px 10px;
+    line-height: 20px;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    outline-style: none;
+    overflow: hidden;
+}
+header .nav-gn {
+    /* width: 40%; */
+    float: right;
+    margin-left: -11px;
+}
+header  .nav-gn  .nav-gn-list {
+    float: left;
+    margin: 11px 20px 11px 0;
+}
+header .nav-gn-list  li {
+    /* float: left; */
+    display:inline-block;
+    position: relative;
+    font-size: 14px;
+    margin-left: 26px;
+}
+header .nav-gn-list ul li a {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    white-space: nowrap;
+    
+}
+header .nav-gn-list .em1 {
+    font-style: normal;
+    vertical-align: top;
+    display: inline-block;
+    width: 26px;
+    height: 25px;
+    background-image: url(./image1/icon_out.png) !important;
+    background-repeat: no-repeat;
+    background-position: -50px 1px;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+header .nav-gn .nav-login {
+    float: left;
+    margin: 11px 0 10px 0;
+}
+header  .nav-login  ul li {
+    display: inline;
+    position: relative;
+    line-height: 26px;
+    white-space: nowrap;
+    font-size: 14px;
+    margin: 0 15px;
+}
+section {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 41px;
+    min-height: 400px;
+   
+}
+section .area-head .head-app {
+    height: 80px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+section .head-app h1  {
+    text-indent: -999em;
+    display: block;
+    width: 200px;
+    height: 70px;
+    margin-top: 8px;
+    background: url(./image1/app_logo.png) no-repeat;
+}
+section .area-body .devel-head {
+    height: 100px;
+    padding: 10px 30px 0 30px;
+    border-bottom: 1px solid #ededed;
+    background: #fff;
+}
+section .area-body .app-logo {
+    float: left;
+    width: 100px;
+}
+section .area-body .app-logo a {
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #e3e3e3;
+    border-radius: 8px;
+    background: #fff;
+    z-index: 10;
+}
+section .area-body .app-content {
+    margin-left: 115px;
+    padding-top: 16px;
+    zoom: 1;
+}
+section .app-content .app-content-left {
+    max-width: 260px;
+    padding-right: 20px;
+    border-right: 1px solid #ededed;
+    float: left;
+}
+section .app-content .app-content-right {
+    width: 200px;
+    padding-left: 20px;
+    float: left;
+}
+section .app-content-left h3 {
+    display: inline-block;
+    font-family: "Microsoft YaHei",SimHei;
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+section .app-content-left p {
+    font-size: 12px;
+    padding-top: 8px;
+    color: gray;
+}
+section .app-content-right span {
+    color: gray;
+    font-size: 12px;
+    padding-right: 10px;
+}
+section .app-content-right .ALLstar {
+    width: 60px;
+    height: 12px;
+    display: inline-block;
+    background: url(./image1/bgs.png) no-repeat 0 -60px;
+    font-size: 0;
+}
+section .app-content-right .star-bar {
+    width: 60px;
+    height: 12px;
+    width: 88%;
+    display: inline-block;
+    background: url(./image1/bgs.png) no-repeat 0;
+    background-position: 0 -40px;
+    font-size: 0;
+}
+section .devel-main {
+    padding: 20px 0;
+    background-color: #fafafa;
+}
+section .devel-main .devel-main-left {
+    float: left;
+    width: 181px;
+}
+section .devel-main-left {
+    position: relative;
+    line-height: 1.5;
+}
+section .devel-main-left .app-btn {
+    padding: 13px 0 3px 0;
+    margin-bottom: 10px;
+}
+section .devel-main-left .app-btn a {
+    font-size: 12px;
+    display: inline-block;
+    width: 181px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    background: url(./image1/fixed_btns.png) 0 0 no-repeat;
+    color: white;
+}
+section .devel-main-left .app-info ul li {
+    font-size: 12px;
+    color: grey;
+    line-height: 1.5;
+    height: 25px;
+}
+
+section .devel-main-left .app-info a{
+    color: #0a8cd2;
+}
+section .official-link {
+    width: 147px;
+    text-align: center;
+    cursor: pointer;
+    background: url(./image1/fixed_btns.png) no-repeat;
+    display: inline-block;
+    padding:0 0 0 2px;
+    height: 30px;
+    border: 0;
+    border-radius: 0;
+    line-height: 29px;
+    margin-top: 10px;
+}
+section .devel-main-right {
+    float: right;
+    width: 680px;
+    padding-left: 30px;
+    border-left: 1px solid #d9d9d9;
+}
+section .devel-main-right .pict {
+    position: relative;
+    width: 680px;
+    height: 300px;
+    background: #fafafa;
+    overflow: hidden;
+}
+section .devel-main-right .app-detail p {
+    font-size: 14px;
+    color: #333;
+}

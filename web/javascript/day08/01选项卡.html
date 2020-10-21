@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .app {
+            display: inline-block;
+            border: 1px solid black;
+        }
+        .app .header {
+            line-height: 40px;
+        }
+        .app .header span {
+            padding: 0 10px;
+            font-size: 18px;
+        }
+        .app .body {
+            height: 150px;
+            padding:10px;
+        }
+        .app .body p{
+            display: none;
+        }
+        .app .body .choose {
+            display: block;
+        }
+        .app .header .choose {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="app" class="app">
+    <div class="header">
+        <span class="choose">精选</span>
+        <span>社会</span>
+        <span>娱乐</span>
+        <span>体育</span>
+    </div>
+    <div class="body">
+        <p class="choose">精选新闻内容</p>
+        <p>社会新闻内容</p>
+        <p>娱乐新闻内容</p>
+        <p>体育新闻内容</p>
+    </div>
+</div>
+<script>
+var app=document.getElementById('app');
+var spans=app.getElementsByTagName('span');
+var ps=app.getElementsByTagName('p');
+for (var i=0;i<spans.length;i++) {
+    spans[i].index=i;
+    spans[i].onclick=function () {
+        
+        for (var j=0;j<spans.length;j++) {
+            spans[j].className="";
+            ps[j].className='';
+        }
+        spans[this.index].className='choose';
+        ps[this.index].className='choose';
+    }
+}
+</script>
+</body>
+</html>

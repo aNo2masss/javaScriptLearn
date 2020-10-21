@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: solid #f00 1px !important;
+    background: #000 !important;
+    color: #fff !important; */
+}
+ul,ol {
+    list-style: none;
+}
+a {
+    color:#333;
+    text-decoration: none;
+}
+.clearfix::after { 
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+}
+
+body {
+    background: #e4e4e4;
+    color: #666;
+}
+header .nav {
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: rgb(253, 237, 237);
+    overflow: hidden;
+    min-width: 1000px;
+    background: url(./image1/bg_header.png)  0 0 repeat-x;
+}
+header .logo img {
+    width: 225px;
+    height: 39px;
+    background: url(./image1/weibo_platform_logo.png) 0 0 no-repeat;
+}
+
+header .nav .navinner {
+    width: 980px;
+    height: 44px;
+    margin: 0 auto;
+}
+header .nav .logo {
+    float: left;
+    width: 225px;
+    height: 39px;
+    padding: 5px 0 0 0;
+}
+header .logo img:hover {
+    background-position: 0  -50px;
+}
+header .item {
+    float: left;
+}
+h1 {
+    position: absolute;
+    left: -9999em;
+}
+header .item ul li {
+    float: left;
+    font-size: 16px;
+    font-family: "Microsoft Yahei";
+    line-height: 48px;
+    padding: 0 18px;
+    color: #333;
+}
+header .nav .login {
+    float: right;
+    height: 48px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #333;
+    padding: 0 20px;
+}
+section {
+    width: 100%;
+    margin-top: 48px;
+    background: url(./image1/bg_center_banner.jpg) top center repeat-x;
+    padding-top: 50px;
+}
+section .devel-header {
+    width: 950px;
+    overflow: hidden;
+    zoom: 1;
+    margin: 0 auto;
+}
+section .devel-header .devel-logo {
+    width: 165px;
+    height: 64px;
+    display: block;
+    line-height: 200px;
+    overflow: hidden;
+    background: url(./image1/wiki_logo_lumpsugar.png) no-repeat;
+}
+section .devel-body .devel-inner {
+    min-height: 195px;
+    width: 950px;
+    background: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+section .devel-body .devel-right {
+    float: left;
+    width: 199px;
+    padding-top: 36px;
+    text-align: left;
+    background-color: #F7F7F7;
+    background: url(./image1/border_line.png) -180px bottom no-repeat;
+}
+section .devel-body .devel-right input {
+    width: 118px;
+    height: 23px;
+    line-height: 23px;
+    padding: 0 5px;
+    border: solid 1px #c2c0c0;
+    margin: 0 0 20px 20px;;
+}
+section .devel-body .devel-right ul {
+    padding: 0 0 1px 9px;
+    margin-bottom: 20px;
+    font-size: 0;
+}
+section .devel-body .devel-right ul li {
+    font-size: 12px;
+    text-indent: 10px;
+}
+section .devel-body .devel-right ul span {
+    background: url('./image1/wiki_icons.png') 0 -60px no-repeat;
+    height: 18px;
+    width: 20px;
+    padding-left: 20px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+section .devel-body .devel-right ul li h3 {
+    font-size: 1.17em;
+    font-weight: 300;
+    padding-bottom: 18px;
+   
+}
+section .devel-body .devel-right ul li h3 a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    height: 18px;
+    text-indent: 10px;
+      
+}
+section .devel-body .devel-right ul li ul {
+    margin-bottom: 15px;
+    padding-bottom: 13px;
+    background: url(./image1/border_line.png) 10px bottom no-repeat;
+}
+section .devel-body .devel-right .child-list a {
+    display: block;
+    height: 25px;
+    padding-left: 25px;
+    line-height: 25px;
+    color: #3c7cb3;
+}
+section .devel-body .devel-left {
+    float: left;
+    width: 709px;
+    padding: 20px 20px 20px;
+    /* background: url(../../../images/wiki/right_bg.png?id=1380275451261) repeat-x; */
+    overflow: hidden;
+    line-height: 20px;
+}
+section .devel-body .devel-left .language {
+    position: absolute;
+    width: 709px;
+    text-align: right;
+    top: 10px;
+}
+section .devel-left .area-sort {
+    padding: 20px 0 0 20px;
+    margin: 0 -10px;
+}
+section .devel-left .area-title {
+    margin: 0;
+    padding: 0 0 6px 0;
+    border-bottom: 1px dotted #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 23px;
+    color: #333;
+}
+section .devel-left .area-body {
+    margin: 20px 0;
+}
+section .devel-left .area-logo {
+    width: 86px;
+    height:73px;
+    background: url(./image1/index_pic.png);
+    float: left;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+section .devel-left .area-info  {
+    padding-bottom: 22px;
+}
+section .devel-left .area-info h2 {
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #3c7cb3;
+}
+section .devel-left .area-info p {
+    line-height: 20px;
+    font-size: 12px;
+}
+section .devel-left .tag-list ul {
+    padding-right: 30px;
+    margin-right: -20px;
+    margin: 20px 0 50px 0;
+    font-size: 0;
+}
+section .devel-left .tag-list ul li {
+    margin-right: 10px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    width: 130px;
+    height: 30px;
+    float: left;
+    line-height: 20px;
+}
+section .devel-left .tag-list ul li a{
+    border: 1px solid #d5e0e8;
+    height: 28px;
+    display: block;
+    background: -webkit-linear-gradient(top,#f5fafc 0,#edf4f9 100%);
+    box-shadow: inset 0 0 1px 0 #f7fbfc;
+    text-align: center;
+    line-height: 26px;
+    color: #3c7cb3;
+}
+section .devel-left .mobile {
+    background-position: 0 -173px;
+}
+section .devel-left .icon-app {
+    background-position: 0 -76px;
+}
+section .devel-left .sub-tag {
+    margin: 15px 0 150px 0;
+}
+section .devel-left .sub-tag ul {
+    margin-right: -50px;
+    
+}
+section .devel-left .sub-tag li {
+    float: left;
+    width: 310px;
+    height: 119px;
+    margin-right: 50px;
+    margin-left: 0;
+    line-height: 20px;
+}
+section .devel-left .sub-tag h3 a {
+    font-weight: 700;
+    font-size: 14px;
+    color: #3c7cb3;
+}
+section .devel-left .sub-tag p {
+    font-size: 12px;
+}
+section .devel-left .area-footer {
+    border-top: 1px solid #E5E5E5;
+    bottom: 20px;
+    top: auto;
+    width: 709px;
+    text-align: right;
+    font-size: 12px;
+    line-height: 20px;
+    color: #333;
+}
+footer .inner{
+    width: 980px;
+    margin: 20px auto 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+footer .inner .up p {
+    margin: 20px 0 5px;
+    text-align: center;
+}
+footer .inner .up p a {
+    color:#3c7cb3;
+    margin: 0 15px;
+    font-size: 12px;
+    line-height: 13px;
+}
+footer .inner .up p span {
+    color: #ccc;
+}
+
+footer .inner .down span{
+    color:#999;
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+footer .inner .down p {
+    text-align: center;
+}

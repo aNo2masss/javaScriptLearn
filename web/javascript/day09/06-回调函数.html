@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.5.1.min.js" onload></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+        .box1 {
+            background-color: red;
+        }
+        .box2 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button>执行动画</button>
+    <div class="box1"></div>
+    <div class="box2"></div>
+<script>
+ $('button').click(function () {
+        $('.box1').animate({
+            left:800,
+            top:400
+        },2000 ,function () {
+            $('.box1').css({
+                backgroundColor:"yellow",
+                border:'1px solid black',
+                width:500,
+                height:500
+            },2000)
+        })
+ })
+</script>
+</body>
+</html>

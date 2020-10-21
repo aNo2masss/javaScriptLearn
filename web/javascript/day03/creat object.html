@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // var  obj= {
+    //         name:'孙悟空',
+    //         age:10,
+    //         gender:'man',
+    //         sayName:function(){
+    //             alert(this.name);
+    //         }
+    //     }
+
+    function creatPerson(name,age,gender,sayName) {
+        var s=new Object();
+        s.name=name,
+        s.age= age,
+        s.gender=gender,
+        s.sayName= function() {
+            alert(this.name);
+        }
+        return s;
+    }
+     var obj2=creatPerson('孙悟空','18','man');
+     var obj3=creatPerson('猪八戒','8','man');
+     var obj4=creatPerson('白骨精','11','woman');
+     var obj5=creatPerson('唐僧','128','man');
+     console.log(obj4.sayName());
+
+</script>
+</body>
+</html>

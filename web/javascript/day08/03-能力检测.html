@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #app {
+            color: red;
+            font-size: 40px;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" style="color: blue;">hello</div>
+    <script>
+        // 封装一个getStyle方法 在不同浏览器下获取样式
+
+        function getStyle(obj, key) {
+            if (window.getComputedStyle) {
+                // 确定可以通过该方法获取就可以直接用了
+                return getComputedStyle(obj)[key];
+                // key = key.replace(/[A-Z]/g,function(math,$1) {
+                //     return '-'+$1.toLowwerCase();
+                // })
+                // return getComputedStyle(obj).getPropertyValue(key);
+            } else {
+                var style = obj.currentStyle;
+                //有样式，可以获取
+                if (style) {
+                    key = key.replace(/-([a-z])?/g, function (math, $1) {
+                        return '-' + $1.toUpperCase();
+                    })
+                    return style[key];
+                } 
+                else {
+                    alert('你的浏览器不支持')
+                    //没有样式要提示
+
+                }
+            }
+        }
+        var app=document.getElementById('app');
+        console.log(app,'color')
+        console.log(getStyle(app,'color'))
+
+    </script>
+</body>
+
+</html>

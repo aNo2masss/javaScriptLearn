@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(window);
+        console.log(this);
+        var obj= {
+            name:"xzt",
+            age:12,
+            gender:"man",
+            sayName() {
+                alert(this.name)
+            }
+        }
+        obj.sayName()
+    </script>
+</body>
+</html>

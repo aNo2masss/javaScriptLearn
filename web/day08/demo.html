@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            border: 0;
+        }
+        div {
+            width: 200px;
+            height: 300px;
+        }
+
+        .box {
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 100px auto;
+            transform: rotateX(-20deg) rotateY(42deg);
+            transform-style: preserve-3d;
+            animation: ro 4s linear infinite;
+            /* animation: big 1s linear infinite; */
+        }
+        @keyframes ro {
+            0%{
+                transform: rotateX(-20deg) rotateY(42deg) ;
+                
+            }
+            100%{
+                transform: rotateX(-20deg) rotateY(402deg);
+                
+            }
+        }
+        @keyframes big {
+            0%{
+                transform:scaleX(1) ;
+                
+            }
+            100%{
+                transform:scaleX(2) scaleY(2);
+                
+            }
+
+        }
+        .box div {
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            }
+        .p-p1 {
+            
+            background-color: red;
+            transform:translateZ(300px);
+        }
+        .p-p2 { 
+           
+            background-color: blue;
+            transform: rotateY(60deg) translateZ(300px);;
+        }
+        .p-p3 { 
+            
+            background-color:green;
+            transform: rotateY(120deg)translateZ(300px);;
+        }
+        .p-p4 { 
+            
+            background-color: purple;
+            transform:  rotateY(180deg) translateZ(300px);;
+        }
+        .p-p5 { 
+            
+            background-color: orange;
+            transform:  rotateY(240deg) translateZ(300px);;
+        }
+        .p-p6 { 
+            background-color:yellow;
+            transform:  rotateY(300deg) translateZ(300px);;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="p-p1"></div>
+    <div class="p-p2"></div>
+    <div class="p-p3"></div>
+    <div class="p-p4"></div>
+    <div class="p-p5"></div>
+    <div class="p-p6"></div>
+</div>
+</body>
+</html>

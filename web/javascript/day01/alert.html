@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script text="text/javascript" src="./alert.js"></script> -->
+    <script type="text/javascript">
+        var num = -2;
+
+        console.log(num >>= 1);
+        var a = 10;
+        var b = 20;
+        // (a>b)? alert("a大"):alert("b大");
+
+        var num = 0;
+        outermost:
+        for (var i = 0; i < 10; i++) {
+            for (var j = 0; j < 10; j++) {
+                if (i == 5 && j == 5) {
+                    break outermost;
+                }
+                num++;
+            }
+        }
+        console.log(num);
+
+        function sayHi() {
+            alert("hello" + arguments[0] + "," + arguments[1])
+        }
+    // sayHi("who are you","fuck you");
+    // for(var i=0;i<=100;i++){
+    //     for(var j=0;j<=100;j++){
+    //         for(var k=0;k<=100;k++)
+    //         {
+    //             if((i+j+k==100)&&(i*3+j*2+k==200)){
+    //                 console.log(i,j,k)
+    //             }
+    //         }
+    //     }
+    // }
+    </script>
+
+</head>
+
+<body>
+    <button>按钮</button>
+    <a href="javascript:alert(1+1)">fuck</a>
+    <script>
+        //    alert("1+1");
+        // console.log(1+1);
+        // document.write ("1+1")
+        // var num=220;
+        // for(var i=0;i<=220;i++){
+        //     if(num%i==0){
+        //         console.log(i)
+        //     }
+        // }
+        var num = 284;
+        var sum = 0;
+        //     for(var i=0;i<284;i++){
+        //         if(num%i==0){
+        //             console.log(i )
+        //             sum+=i;
+        //         }
+        //     }
+        //    console.log(sum);
+
+
+        // 水仙花数
+        // var num = prompt('输入一个整数');
+        // num = i + k * 10 + k * 100;
+        var num = prompt('输入')
+        var i = num % 10;
+        var j = parseInt(num % 100 / 10);
+        var k = parseInt(num / 100);
+        if (i * i * i + j * j * j + k * k * k == num) {
+            console.log(k,j,i);
+        }
+        
+    // for(var i=0;i<10;i++){
+    //     for(var j=0;j<10;j++){
+    //         for(var k=1;k<10;k++){
+    //             if(i*i*i+j*j*j+k*k*k==i+j*10+k*100)
+    //             console.log(k,j,i);
+    //         }
+    //     }
+    // }
+
+    </script>
+
+    <a href="javascript:;">返回顶部</a>
+</body>
+
+</html>

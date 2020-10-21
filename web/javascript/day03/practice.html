@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 判断整数n的平方根之前除了1之外，还有没有其他的约数（1-Math.sqrt(n)
+        var num=prompt('请输入整数');
+        for(var i=0;i<=Math.sqrt(num);i++) {
+            // 是否是num的约数
+            if(num%i==0){
+                console.log(i);
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

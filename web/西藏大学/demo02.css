@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* outline: solid #f00 1px !important;
+    background: #000 !important;
+    color: #fff !important; */
+}
+ul{
+    list-style: none;
+}
+a {
+    color:#333;
+    text-decoration: none;
+}
+.left {
+    float: left;
+}
+.right {
+    float:right;
+}
+
+header {
+    height: 70px;
+    width: 100%px;
+    background-color:darkblue;
+    overflow: hidden;
+    min-width: 70%;
+}
+
+header ul  {
+    margin-left: 25%;
+}
+header ul li {
+    height: 70px;
+    line-height:70px;
+    padding: 0 1% 0;
+    float: left;
+    color: white;
+}
+header .login {
+    visibility: hidden;
+}
+header .login  .span {
+    color: white;
+    background-color: orange;
+    float: left;
+    padding:4px 6px 3px 6px;
+    margin-left: 100px;
+    margin-top: 20px;
+    visibility: visible !important;
+}
+/* header .login:hover {
+    visibility: visible;
+} */
+header .login .login-window {
+    width: 640px;
+    height: 430px;
+    background-color: skyblue;
+    position: fixed; 
+    left: 50%;
+    top: 50%; 
+    transform: translate(-30%,-30%);
+    
+}
+section .job {
+    width: 980px;
+    height:100% ;
+    margin: 0 auto;
+    margin-top: 20px;
+    min-width: 800px;
+}
+.job:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+section .banner {
+    width: 600px;
+    height: 400px;
+    float: left;
+    
+}
+section  .banner .box {
+    width: 200px;
+    height: 200px;
+    color: white;
+    text-align: center;
+    background-color: yellowgreen;
+    line-height: 200px;
+    float: left;
+}
+
+section .job-right {
+    width: 360px;
+    height: 400px;
+    float: right;
+}
+
+section .banner-right {
+    width: 360px;
+    height: 65px;
+    background-color: orange;
+    color: black;
+    text-align: center;
+    line-height: 65px;
+}
+section .banner-body {
+    height: 329px;
+    width: 359px;
+    border:1px solid black;
+    margin-top: 5px;
+}
+section .banner-body ol li {
+    margin: 20px 0 20px 40px;
+}
+article {
+    width: 980px;
+    height: 100%;
+    margin-top: 20px;
+    margin: 0 auto;
+    min-width: 800px;
+    padding-top: 20px;
+}
+article:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+article .img {
+    float: left;
+    text-align: center;
+}
+article .article-body {
+    width: 420px;
+    height: 100%;
+}
+article .article-body,
+ol {
+    float: left;
+    margin-left: 20px;
+}
+article .xuqiu{
+    width: 423px;
+    height: 41px;
+    background: url("./imges/tableBg.png") no-repeat center;
+    vertical-align: middle;
+   
+}
+article .xuqiu span {
+    padding-left: 50px;
+    line-height: 41px;
+}
+article .xuqiu .more {
+    float: right;
+    padding-right: 20px;
+}
+article .article-body ol li {
+    width: 400px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+article .article-right {
+    float: right;
+}
+article .article-right .title {
+    width: 230px;
+    height: 40px;
+    background-color: orange;
+    text-align: center;
+}
+article .article-right .right-body {
+    width: 230px;
+    height: 100%;
+    border: 1px solid black;
+}
+article .article-right ul li {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-indent: 2em;
+}
+footer {
+    height: 200px;
+    width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid skyblue;
+    min-width: 70%;
+    
+}
+footer ul li {
+    overflow: hidden;
+    font-size: 14  px;
+}
+footer .logo {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background: url("./imges/blue.png") no-repeat center;
+    position: relative;
+    left: 30%;
+    font-size: 12px;
+}
+footer ul li .police {
+    background: url("./imges/beiantubiao.png") no-repeat left;
+    padding-left: 20px;
+    font-weight: none;
+    color: grey;
+}
+footer ul li .gif {
+    background: url("./imges/pic1.gif") no-repeat right ;
+    padding-right: 20px;
+}
+footer .qr-code {
+    width: 120px;
+    height: 110px;
+    background: url("./imges/app.jpg") no-repeat right;
+    position: relative;
+    top: -62px;
+    left: 80%
+   
+}

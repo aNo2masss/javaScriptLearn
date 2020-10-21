@@ -5,12 +5,6 @@
     background: #000 !important;
     color: #fff !important; */
 }
-/* body {
-    background: url("./images/bg.png")  no-repeat center top;
-    opacity: 0.4;
-    /* background-color: red; 
-}*/
-
 ul,ol {
     list-style: none;
 }
@@ -27,18 +21,23 @@ a {
 .nav,.banner,.star,.accessory,.world,footer {
     width: 100%;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .nav {
     height:100px;
     width: 100%;
     background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 999999999;
+    
 }
 .nav .nav-head {
     height: 30px;
     width: 100%;
     background-color: black;
-    overflow: hidden;
 }
 .nav-head::after {
     /* 闭合浮动 清楚内外部浮动影响 */
@@ -98,7 +97,7 @@ a {
     height: 70px;
     width: 100%;
     background-color: gainsboro;
-    overflow: hidden;
+    
 }
 .nav-body .logo {
     width: 170px;
@@ -118,17 +117,58 @@ a {
     line-height:70px;
     padding: 0 1.5% 0;
     float: left;
+}
+.banner {
+    height: 630px;
+    width: 1620px;
+    /* margin: 0 auto; */
+    position: relative;
+    /* left: 480px; */
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,0);
     overflow: hidden;
     
 }
-.banner {
-    height: 600px;
-    width: 80%;
-    background:url("./images/banner3.jpg") no-repeat center;
-    margin: 0 10% 0;
-    clear: both;
+ @keyframes ro {
+     0% {
+        transform: translateX(-810px);
+     }
+     100% {
+        transform:  translateX(-2500px);
+     }
+ }
+/* .banner3:hover {
+    /* animation: banner all 3s ;
+    animation: ro 1s ease forwards ;
+ } */
+
+.banner1 {
+    height: 630px;
+    background:url("./images/banner1.jpg") no-repeat center;
     /* vertical-align: top; */
+    position: absolute;
+    /* max-width: 80%; */
+    width: 1620px;
 }
+.banner2 {
+    height: 630px;
+    /* width: 80%; */
+    background:url("./images/banner2.jpg") no-repeat center;
+    /* vertical-align: top; */
+    position: absolute;
+    width: 1620px;
+}
+.banner3 {
+    height: 630px;
+    /* width: 80%; */
+    background:url("./images/banner3.jpg") no-repeat center;
+    /* vertical-align: top; */
+    position: absolute;
+    width: 1620px;
+    
+}
+
 .star {
     display: flex;
     flex-direction: column;
@@ -193,20 +233,23 @@ a {
 
 .accessory {
     width: 100%;
-    height: 870px;
-    float: left;
+    height:1100px;
     flex-direction: column;
     position: relative;
     background-color: #F6F6F6;
+    padding-bottom: 5%;
+    overflow: hidden;
     
 }
 .accessory .logo {
     width: 395px;
     height:56px ;
     background: url("./images/wb.png") no-repeat center;
-   margin: 0 auto;
-   margin-top: 1%;
-   margin-bottom: 1%;
+    align-self: center;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+
 }
 .accessory .container1 {
     width: 280px;
@@ -276,8 +319,8 @@ a {
     background: url("./images/20131120165101xYIYzhkVEy.jpg") no-repeat center;
     border-bottom: 2px solid grey;
     float: left;
-    top: -24px;
-    left: 230px;
+    top: 301px;
+    left: -632px;
 }
 
 .accessory .container5 {
@@ -287,8 +330,8 @@ a {
     background: url("./images/20141011101157yZEFpMrk0h.jpg") no-repeat center;
     border-bottom: 2px solid grey;
     float: left;
-    top: -24px;
-    left: 230px;
+    top: 25px;
+    left: -14px;
 }
 .accessory .container6 {
     width: 280px;
@@ -296,8 +339,8 @@ a {
     position: relative;
     border-bottom: 2px solid grey;
     float: left;
-    top: -24px;
-    left: 230px;
+    top: -259px;
+    left: 539px;
     background: url("./images/20141230145609l7Fsk7CdHy.jpg") no-repeat center;
 
 }
@@ -308,8 +351,8 @@ a {
     float: left;
     background: url("./images/20150413174340NLV2gvV4FU.jpg") no-repeat center;
     border-bottom: 2px solid grey;
-    top: -24px;
-    left: 230px;
+    top: 41px;
+    left: -346px;
 }
 .accessory .container8 {
     width: 280px;
@@ -318,6 +361,204 @@ a {
     float: left;
     background: url("./images/201410270957132inlm3IwsV.jpg") no-repeat center;
     border-bottom: 2px solid grey;
-    top: -24px;
-    left: 230px;
+    top: 40px;
+    left: -4px;
+}
+.accessory .clearfix  {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+    visibility: hidden;
+    
+}
+.world {
+    height: 800px;
+    width: 100%;
+    padding: 1px    ;
+    background-color: #eaeaea;
+    position: relative;
+}
+.world .slogan {
+    width: 369px;
+    height: 50px;
+    background: url("./images/world.png") no-repeat;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.world .world-left .box {
+    width: 380px;
+    height: 270px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    float: left;
+}
+.world .world-left .box1 {
+    background: url("./images/201403261455420lqMPNGENc.png") no-repeat center;
+    margin-left: 200px;
+}
+.world .world-left .box2 {
+    top: -280px;
+    left: 600px;
+    background: url("./images/20150226100534QqezQ85N6y.jpg") no-repeat center;
+}
+.world .world-left .box3 {
+    background: url("./images/20140926184007v2rjcVFcbW.jpg") no-repeat;
+    top: -274px;
+    left: 200px;
+}
+.world .world-left .box4 {
+    top: -554px;
+    left: 600px;
+    background: url("./images/20131212113902waaLqQUWfB.jpg") no-repeat;
+}
+.world .world-right {
+    float: right;
+    margin-right: 200px;
+    background-color: white;
+    position: relative;
+}
+.world .world-right .news {
+    width: 300px;
+    height: 557px;
+    background-color: white;
+}
+
+.world .world-right .news p {
+    display: inline-block;
+    text-align: center;
+    width: 154px;
+    height: 46px;
+    border-top: 2px solid green;
+    line-height: 46px;
+}
+.world .world-right li {
+    width: 260px;
+    height: 110px;
+    position: relative;
+    background-color:#DADADA;
+    margin: 10px auto;
+    text-align: center;
+}
+.world-right ul li img {
+    vertical-align: middle;
+    float: left;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.world-right ul li span {
+    position: absolute;
+    font-size:14px;
+    top:30px;
+    left: 120px;
+}
+
+.world .world-right .weibo {
+    visibility: hidden;
+    /* overflow: hidden; */
+    top: 48px;
+    position:absolute;
+    font-size: 14px;
+    opacity: 1;
+}
+.world .world-right .weibo-box { 
+    display: inline-block;
+    background-color:grey;
+    text-align: center;
+    position: absolute;
+    top: -48px;
+    left: 146px;
+    width: 154px;
+    height: 46px;
+    line-height: 46px;
+    visibility: visible !important;
+
+}
+.world .world-right .weibo:hover {
+    visibility:visible;
+   
+} 
+.world .world-right .weibo-box:hover {
+    width: 154px;
+    height: 46px;
+    border-top: 2px solid green;
+    line-height: 46px;
+    background-color: white;
+}
+footer {
+    height: 436px;
+    width: 100%;
+}
+footer .service {
+    height: 43px;
+    width: 1200px;
+    margin:0 auto;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+footer .box {
+    width: 167px;
+    height: 43px;
+    vertical-align: middle;
+    /* background: url("./images/f1.jpg") no-repeat left center; */
+    padding-left: 50px;
+    font-size: 0.8em;
+    float: left;
+    
+}
+footer .box p {
+    color:grey;
+}
+footer .box1 {
+    background: url("./images/f1.jpg") no-repeat left center;
+}
+footer .box2 {
+    background: url("./images/f2.jpg") no-repeat left center;
+}
+footer .box3 {
+    background: url("./images/f3.jpg") no-repeat left center;
+}
+footer .box4 {
+    background: url("./images/f4.jpg") no-repeat left center;
+}
+footer .box5 {
+    background: url("./images/f5.jpg") no-repeat left center;
+}
+footer .footer-body {
+    width: 1000px;
+    height:170px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+footer ul {
+    float: left;
+    margin-left: 50px;
+    font-size: 0.8em;
+}
+footer ul li {
+    color: grey;
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer ul h4 {
+    color:black;
+}
+footer ul li p  {
+    background: url("./images/i-h-sinawb.png") no-repeat left center;
+    padding-left:21px;
+}
+footer ul li span {
+    
+    height: 32px;
+    width: 32px;
+    background: url("./images/contact_1.jpg") no-repeat left center;
+    font-size:1.8em;
+    color: green; 
+    padding-left:32px;
 }

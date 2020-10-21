@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../vue2.6.12.js"></script>
+</head>
+
+<body>
+    <div id="app">
+      
+        <div>
+            <!-- <input type="button" value="按钮" @click="demo()"> -->
+            <form action="">
+                <div>数值a<input type="text" name="" id="" v-model="a" ></div>
+                <div>数值b<input type="text" name="" id="" v-model="b" @keyup.enter="handle"></div>
+                <div><input type="button" value="提交" @click="handle"></div>
+                    <div>计算结果为: {{ result }}</div>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#app',
+            data: {
+                a:'',
+                b:'',
+                result:''
+            },
+            methods: {
+                handle: function () {
+                   this.result=parseInt(this.a) + parseInt(this .b)
+                }
+            }
+        })
+    </script>
+</body>
+
+
+</html>

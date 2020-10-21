@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.5.1.min.js" onload></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .box1 {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn2">回上海</button>
+    <button class="btn1">去广州</button>
+    <div class="box1"></div>
+    <!-- <div class="box2"></div> -->
+    <script>
+        // $('button').click(function () {
+        //     $('.box1').delay(2000).animate({
+        //         left: 800,
+        //         top: 400
+        //     }, 2000)
+        // })
+
+        // 元素依次进行动画
+        // $('button').click(function () {
+        //     $('div').each( function (index,item) {
+        //         $(this).delay(index * 1000).animate({left:2000},)
+        //     })
+        // })
+
+        $('.btn1').click(function () {
+            $('.box1').animate({left: 1000}, 2000) //广州 
+            // $('.box1').stop(true,false).animate({width:400},2000)
+        })
+        $('.btn2').click(function () {
+            // $('.box1').stop(true,false).animate({top:500},2000)  //北京
+
+            //判断正在执行动画
+            if($('.box1').is(':animated')) {
+
+            } else {
+                $('.box1').stop(true,false).animate({top:500},2000)  //北京
+            }
+        })
+    </script>
+</body>
+</html>

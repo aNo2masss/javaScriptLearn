@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.5.1.min.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>hello</div>
+<button class="btn1">添加类</button>
+<button class="btn2">删除类</button>
+<button class="btn3">交换</button>
+<button class="btn4">判断类</button>
+<button class="btn5">添加属性</button>
+<button class="btn6">移除属性</button>
+<script>
+$('div').html('<h1>hello world</h1>');
+$('.btn1').click(function () {
+    $('div').addClass('red')
+})
+$('.btn2').click(function () {
+    $('div').removeClass('red')
+})
+
+$('.btn3').click(function () {
+    $('div').toggleClass('red')
+})
+$('.btn4').click(function () {
+    console.log($('div').hasClass('red'))
+})
+$('.btn5').click(function () {
+    $('div').attr('name','hello')
+})
+</script>
+</body>
+</html>

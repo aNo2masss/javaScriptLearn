@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 0;
+            padding: 0;
+
+        }
+
+        .title {
+            height: 60px;
+            background-color: plum;
+        }
+
+        .nav {
+            width: 600px;
+            height: 60px;
+            margin: 0 auto;
+        }
+
+        li {
+            float: left;
+            padding: 5px 10px 15px 10px;
+            margin: 10px;
+            color: white;
+        }
+
+        li:hover {
+            background-color: white;
+            transition: 1s ease;
+            color: pink;
+        }
+
+        a {
+            color: pink;
+            text-decoration: none;
+
+        }
+
+        .home {
+            background-color: white;
+
+        }
+        .nav div {
+            width: 300px;
+            height:100px;
+            text-align: center;
+            background-color: #c0c0c0;
+            position: absolute;
+            display: none;
+            
+        }
+        .home:hover div {
+            display: block;
+            transition:top .3s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <div class="nav">
+            <ul type="none">
+                <li class="home"><a href=""> home</a>
+                    <div class="down">下拉的内容</div>
+                </li>
+                <li>bref</li>
+                <li>news</li>
+                <li>produce</li>
+                <li>honor</li>
+                <li>message</li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

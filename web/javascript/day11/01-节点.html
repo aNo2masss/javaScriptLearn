@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="test">1<p id="x1">HTML</p><p>javascript</p></div>
+<script>
+    var test=document.getElementById('test');
+    var newnode=document.createElement('p');
+    var p1=document.getElementById('x1');
+
+    newnode.innerHTML="php";
+    test.appendChild(newnode);
+    
+    var father=p1.parentNode;
+     
+    var erzi=father.childNodes;
+    
+    
+
+    console.log(erzi,erzi[2].innerHTML);
+</script>
+</body>
+</html>

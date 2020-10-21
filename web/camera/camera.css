@@ -1,0 +1,151 @@
+
+*{
+    padding: 0;
+    border: 0;
+}
+.nav { 
+    width: 1000px;
+    height: 600px;
+    background-color: orange;
+    margin:0 auto;
+    position:absolute;
+}
+.main {
+    width: 500px;
+    height: 200px;
+    background-color:black  ;
+    border-top: 20px solid #eee;
+    border-bottom: 20px solid #eee;
+    
+    border-radius: 1%;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+.btn-box {
+    height: 60px;
+    width: 200px;
+    background-color:#cccccc ;
+    position: relative;
+    top:-52px;
+    left: 209px;
+}
+.lens {
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border: 4px solid #eee;  
+    border-radius: 50%;
+    position: relative;
+    top: -35px;
+    box-shadow:-2px -3px 4px #C2C2C2;
+}
+.lens div {
+        width: 15px;
+        height: 15px;
+        background-color:grey;
+        border-radius: 50%;
+        opacity: 0.5;
+        position: relative;
+        top: 7px;
+        left: 4px;
+        
+}
+.button {
+    height: 30px;
+    width: 60px;
+    background-color: black;
+    border: 3px solid white;
+    margin: 0 auto;
+    box-shadow:-2px -5px 1px #666;
+    
+}
+.button .point1 {
+    width: 5px;
+    height: 5px;
+    background-color: #eee;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+.button .point2 {
+    width: 10px;
+    height: 10px;
+    background-color:#BFBFBF;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    opacity: 0.5;
+    left: 30px;
+}
+
+
+.btn-box1 {
+        height: 50px;
+        width: 80px;
+        position: relative;
+        top: -130px;
+}
+.button2 {
+    height: 40px;
+    width: 80px;
+    background-color: #888888;
+    box-shadow:-2px -3px 1px black;
+}
+.button3 {
+    height: 10px;
+    width: 60px;
+    background-color: #575757;
+    margin: 0 auto;
+}
+.btn-box2 {
+    height: 25px;
+    width: 40px;
+    position: relative;
+    left: 460px;
+    top: -155px;
+}
+.button5 {
+    height: 20px;
+    width: 40px;
+    background-color: #cccccc;
+    position: relative;
+    box-shadow:-2px -5px 1px black;
+}
+.button6 {
+    height: 5px;
+    width: 30px;
+    background-color: #595959;
+    position: relative;
+    margin: auto;
+}
+.jingtou {
+    position:absolute; 
+    width: 180px;
+    height: 180px;
+}
+.jingtou .main {
+    width: 150px;
+    height: 150px;
+    background-color: #cdcdcd;
+    border: 30px solid#cdcdcd;
+    border-radius:50%; 
+    box-shadow: inset 0px 3px 2px #999,
+                inset -1px -3px 2px white,
+                -2px -5px 1px #666;
+    position: relative;
+    top: -20px;
+    left: -20px;
+   
+}
+
+.jingtou .bg {
+    width: 180px;
+    height: 100px;
+    background-color:#cccccc ;
+    position: relative;
+    top: -130px;
+    left: 210px;
+}
