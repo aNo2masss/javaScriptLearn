@@ -1,10 +1,45 @@
 * {
     padding: 0;
     margin: 0;
-    /* outline: solid #f00 1px !important;
+    /* outline: solid #f00 1rem/50 !important;
     background: #000 !important;
     color: #fff !important; */
 }
+@media screen and(min-width: 320px)and(max-width: 359px){
+    html{
+    font-size: 12.8px;
+    }
+    }
+    @media screen and(min-width: 360px)and(max-width: 374px){
+    html{
+    font-size: 14.4px;
+    }
+    }
+    @media screen and(min-width: 375px)and(max-width: 385px){
+    html{
+    font-size: 15px;
+    }
+    }
+    @media screen and(min-width: 386px)and(max-width: 392px) {
+    html {
+    font-size: 15.44px;
+    }
+    }
+    @media screen and(min-width: 393px)and(max-width: 400px){
+    html{
+    font-size: 16px;
+    }
+    }
+    @media screen and(min-width: 401px)and(max-width: 414px){
+    html{
+    font-size: 16.48px;
+    }
+    }
+    @media screen and(min-width: 750px)and(max-width: 799px){
+    html{
+    font-size: 30.72px;
+    }
+    }
 ul,ol {
     list-style: none;
 }
@@ -35,23 +70,23 @@ header {
     left: 0;
     z-index: 9999;
     width: 100%;
-    height: 48px;
-    border-top: 2px solid #fa7d3c;
-    box-shadow: 0 0 1px 0px rgba(0,0,0,0.15);
+    height: 48rem/50;
+    border-top: 2rem/50 solid #fa7d3c;
+    box-shadow: 0 0 1rem/50 0rem/50 rgba(0,0,0,0.15);
     background: #fff;
-    min-width: 1370px;
+    min-width: 1370rem/50;
 }
 header .nav {
     position: relative;
     width:80%;
-    height: 48px;
+    height: 48rem/50;
     margin: 0 auto;
 }
 header .nav-logo {
     float: left;
     position: relative;
-    width: 140px;
-    height: 48px;
+    width: 140rem/50;
+    height: 48rem/50;
     color: #333;
     left: auto;
     top: auto;
@@ -60,9 +95,9 @@ header .nav-logo {
 }
 header .nav-logo span {
     display: block;
-    margin-left: 50px;
-    width: 140px;
-    height: 48px;
+    margin-left: 50rem/50;
+    width: 140rem/50;
+    height: 48rem/50;
     cursor: pointer;
     background: url(./image1/WB_logo.png) no-repeat 0 40%;
 }
@@ -70,19 +105,19 @@ header .nav-logo span {
 header .nav-search {
     position: relative;
     float: left;
-    width: 468px;
-    height: 28px;
-    margin: 9px 0 0 10px;
+    width: 468rem/50;
+    height: 28rem/50;
+    margin: 9rem/50 0 0 10rem/50;
     background-color: #f2f2f5;
-    border: 1px solid #ccc;
+    border: 1rem/50 solid #ccc;
     color: #808080;
 }
 header .nav-search input {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 4px 33px 4px 10px;
-    line-height: 20px;
+    padding: 4rem/50 33rem/50 4rem/50 10rem/50;
+    line-height: 20rem/50;
     box-shadow: none;
     border: none;
     background-color: transparent;
@@ -92,23 +127,23 @@ header .nav-search input {
 header .nav-gn {
     /* width: 40%; */
     float: right;
-    margin-left: -11px;
+    margin-left: -11rem/50;
 }
 header  .nav-gn  .nav-gn-list {
     float: left;
-    margin: 11px 20px 11px 0;
+    margin: 11rem/50 20rem/50 11rem/50 0;
 }
 header .nav-gn-list  li {
     /* float: left; */
     display:inline-block;
     position: relative;
-    font-size: 14px;
-    margin-left: 26px;
+    font-size: 14rem/50;
+    margin-left: 26rem/50;
 }
 header .nav-gn-list ul li a {
     display: block;
-    height: 26px;
-    line-height: 26px;
+    height: 26rem/50;
+    line-height: 26rem/50;
     white-space: nowrap;
     
 }
@@ -116,195 +151,195 @@ header .nav-gn-list .em1 {
     font-style: normal;
     vertical-align: top;
     display: inline-block;
-    width: 26px;
-    height: 25px;
+    width: 26rem/50;
+    height: 25rem/50;
     background-image: url(./image1/icon_out.png) !important;
     background-repeat: no-repeat;
-    background-position: -50px 1px;
+    background-position: -50rem/50 1rem/50;
     overflow: hidden;
-    text-indent: -9999px;
+    text-indent: -9999rem/50;
 }
 
 header .nav-gn .nav-login {
     float: left;
-    margin: 11px 0 10px 0;
+    margin: 11rem/50 0 10rem/50 0;
 }
 header  .nav-login  ul li {
     display: inline;
     position: relative;
-    line-height: 26px;
+    line-height: 26rem/50;
     white-space: nowrap;
-    font-size: 14px;
-    margin: 0 15px;
+    font-size: 14rem/50;
+    margin: 0 15rem/50;
 }
 section {
-    width: 980px;
+    width: 980rem/50;
     margin: 0 auto;
-    padding-top: 41px;
-    min-height: 400px;
+    padding-top: 41rem/50;
+    min-height: 400rem/50;
 }
 section .area-head .head-app {
-    height: 80px;
-    padding-top: 10px;
+    height: 80rem/50;
+    padding-top: 10rem/50;
     overflow: hidden;
 }
 section .head-app h1  {
     text-indent: -999em;
     display: block;
-    width: 200px;
-    height: 70px;
-    margin-top: 8px;
+    width: 200rem/50;
+    height: 70rem/50;
+    margin-top: 8rem/50;
     background: url(./image1/app_logo.png) no-repeat;
 }
 section .area-body .devel-head {
-    height: 100px;
-    padding: 10px 30px 0 30px;
-    border-bottom: 1px solid #ededed;
+    height: 100rem/50;
+    padding: 10rem/50 30rem/50 0 30rem/50;
+    border-bottom: 1rem/50 solid #ededed;
     background: #fff;
 }
 section .area-body .app-logo {
     float: left;
-    width: 100px;
+    width: 100rem/50;
 }
 section .area-body .app-logo a {
     position: relative;
     display: block;
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-    border: 1px solid #e3e3e3;
-    border-radius: 8px;
+    width: 80rem/50;
+    height: 80rem/50;
+    padding: 10rem/50;
+    border: 1rem/50 solid #e3e3e3;
+    border-radius: 8rem/50;
     background: #fff;
     z-index: 10;
 }
 section .area-body .app-content {
-    margin-left: 115px;
-    padding-top: 16px;
+    margin-left: 115rem/50;
+    padding-top: 16rem/50;
     zoom: 1;
 }
 section .app-content .app-content-left {
-    max-width: 260px;
-    padding-right: 20px;
-    border-right: 1px solid #ededed;
+    max-width: 260rem/50;
+    padding-right: 20rem/50;
+    border-right: 1rem/50 solid #ededed;
     float: left;
 }
 section .app-content .app-content-right {
-    width: 200px;
-    padding-left: 20px;
+    width: 200rem/50;
+    padding-left: 20rem/50;
     float: left;
 }
 section .app-content-left h3 {
     display: inline-block;
     font-family: "Microsoft YaHei",SimHei;
-    font-size: 20px;
+    font-size: 20rem/50;
     font-weight: normal;
     color: #000;
-    margin-right: 10px;
+    margin-right: 10rem/50;
     vertical-align: middle;
 }
 section .app-content-left p {
-    font-size: 12px;
-    padding-top: 8px;
+    font-size: 12rem/50;
+    padding-top: 8rem/50;
     color: gray;
 }
 section .app-content-right span {
     color: gray;
-    font-size: 12px;
-    padding-right: 10px;
+    font-size: 12rem/50;
+    padding-right: 10rem/50;
 }
 section .app-content-right .ALLstar {
-    width: 60px;
-    height: 12px;
+    width: 60rem/50;
+    height: 12rem/50;
     display: inline-block;
-    background: url(./image1/bgs.png) no-repeat 0 -60px;
+    background: url(./image1/bgs.png) no-repeat 0 -60rem/50;
     font-size: 0;
 }
 section .app-content-right .star-bar {
-    width: 60px;
-    height: 12px;
+    width: 60rem/50;
+    height: 12rem/50;
     width: 88%;
     display: inline-block;
     background: url(./image1/bgs.png) no-repeat 0;
-    background-position: 0 -40px;
+    background-position: 0 -40rem/50;
     font-size: 0;
 }
 section .devel-main {
-    padding: 20px 0;
+    padding: 20rem/50 0;
     background-color: #fafafa;
 }
 section .devel-main .devel-main-left {
     float: left;
-    width: 181px;
+    width: 181rem/50;
 }
 section .devel-main-left {
     position: relative;
     line-height: 1.5;
 }
 section .devel-main-left .app-btn {
-    padding: 13px 0 3px 0;
-    margin-bottom: 10px;
+    padding: 13rem/50 0 3rem/50 0;
+    margin-bottom: 10rem/50;
 }
 section .devel-main-left .app-btn a {
-    font-size: 12px;
+    font-size: 12rem/50;
     display: inline-block;
-    width: 181px;
-    height: 28px;
+    width: 181rem/50;
+    height: 28rem/50;
     text-align: center;
-    line-height: 28px;
+    line-height: 28rem/50;
     background: url(./image1/fixed_btns.png) 0 0 no-repeat;
     color: white;
 }
 section .devel-main-left .app-info ul li {
-    font-size: 12px;
+    font-size: 12rem/50;
     color: grey;
     line-height: 1.5;
-    height: 25px;
+    height: 25rem/50;
 }
 
 section .devel-main-left .app-info a{
     color: #0a8cd2;
 }
 section .official-link {
-    width: 147px;
+    width: 147rem/50;
     text-align: center;
     cursor: pointer;
     background: url(./image1/fixed_btns.png) no-repeat;
     display: inline-block;
-    padding:0 0 0 2px;
-    height: 30px;
+    padding:0 0 0 2rem/50;
+    height: 30rem/50;
     border: 0;
     border-radius: 0;
-    line-height: 29px;
-    margin-top: 10px;
+    line-height: 29rem/50;
+    margin-top: 10rem/50;
 }
 section .devel-main-right {
     float: right;
-    width: 680px;
-    padding-left: 30px;
-    border-left: 1px solid #d9d9d9;
+    width: 680rem/50;
+    padding-left: 30rem/50;
+    border-left: 1rem/50 solid #d9d9d9;
     overflow: hidden;
     position: relative;
 }
 section .devel-main-right .pict {
-    width: 450px;
-    height: 300px;
+    width: 450rem/50;
+    height: 300rem/50;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
 section .devel-main-right .pic-show {
     position: relative;
-    width: 450px;
-    height: 300px;
+    width: 450rem/50;
+    height: 300rem/50;
     background: #fafafa;
     margin: 0 auto;
     
 }
 section .devel-main-left .app-detail {
-    margin-left:20px ;
+    margin-left:20rem/50 ;
 }
 section .devel-main-right .app-detail p {
-    font-size: 14px;
+    font-size: 14rem/50;
     color: #333;
 }
 
@@ -312,13 +347,13 @@ section .devel-main-right .app-detail p {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 30px;
+    bottom: 30rem/50;
     text-align: center;
 }
 
 .btns span {
-    padding: 6px;
-    margin: 6px;
+    padding: 6rem/50;
+    margin: 6rem/50;
     font-size: 0;
     border-radius: 50%;
     background: white;
@@ -333,13 +368,13 @@ section .devel-main-right .app-detail p {
 .next {
     position: absolute;
     top: 50%;
-    width: 30px;
-    height: 50px;
+    width: 30rem/50;
+    height: 50rem/50;
     color: white;
-    margin-top: -25px;
+    margin-top: -25rem/50;
     background-color: gray;
     text-align: center;
-    line-height: 50px;
+    line-height: 50rem/50;
     cursor: pointer;
     opacity: 0.4;
 }
